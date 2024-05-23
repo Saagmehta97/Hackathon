@@ -20,7 +20,12 @@ async function getSportsData() {
 
     for (let i = 0; i < raceData.standings.length - 1; i++) {
       console.log(raceData.standings[i]);
-      str += '<li>' + JSON.stringify(raceData.standings[i].team.name) + '</li>';
+      str +=
+        '<li>' +
+        (i + 1) +
+        ' :  ' +
+        JSON.stringify(raceData.standings[i].team.name) +
+        '</li>';
     }
     str += '</ul>';
     document.getElementById('teamraces').innerHTML = str;
