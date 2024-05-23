@@ -15,15 +15,22 @@ async function getSportsData() {
     let result = await response.text();
     //result = JSON.parse(result)
     // console.log(JSON.parse(result, null, 2));
-    let raceData = JSON.parse(result, null, 2);
-    console.log(raceData);
+    const raceData = JSON.parse(result);
+    // console.log(raceData.races);
+    for (let i = 0; i < raceData.races.length - 1; i++) {
+      console.log(raceData.races[i]);
+      document.getElementById('teamraces').innerHTML = JSON.stringify(
+        raceData.races[i]
+      );
+    }
+
     //for (const data in JSON.stringify(result)) {
     //console.log(data)
-    document.getElementById('teamraces').innerHTML = 'RACE DATA GOES HERE';
+    // document.getElementById('teamraces').innerHTML = 'RACE DATA GOES HERE';
     //}
     //document.getElementById("teamraces").innerHTML = result.races.map((item) => `<li${item.name}</li>`)
   } catch (error) {
-    console.error('Error!');
+    console.error(error);
   }
 }
 getSportsData();
