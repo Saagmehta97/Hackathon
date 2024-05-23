@@ -1,3 +1,64 @@
-README
+--README
+--ChatGPT Quick LookUp
+--1. Either highlight text in browser or accepts input inside extension
+--2. Copies that string, accesses chatgpt and pushes string as input to ChatGPT
 
-HACKATHON TEST
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--Other ideas:
+
+--possibly work with chat gpt to highlight and bring that highlighted portion straight to chat gpt chat to answer
+--fact checker (titled BS Checker). Copies highlighted text and copies to fact checker website?
+--make all the words fall down to the bottom of the page (animated? maybe!)
+--single click currency converter extension
+--background image changer extension
+
+
+-- removes all text and prints just "hello world" on every page
+
+--keep track of time that person is on a site
+    -- alert you at certain times if you spend too much time on a site
+    
+
+
+
+
+
+
+
